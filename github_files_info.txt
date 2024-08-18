@@ -16,11 +16,6 @@
 
 
 
-
-
-
-
-
 # ================================ Other Files ================================
 # sch-lda/yctest2：此翻译方式为劫持翻译，将Lua传入Yimmenu的显示相关API的参数进行实时替换。
 # Github地址：https://github.com/sch-lda/yctest2/tree/main/Lua
@@ -29,8 +24,14 @@ sch-lda/yctest2,Lua,lua_lang.json,%APPDATA%\YimMenu\translations
 
 
 
+
+
 # ================================ Kiddion Lua ================================
 # Kiddion 脚本目录为 %ProgramData%\GTA5OnlineTools\Kiddion\scripts
+# 以下仅收录，我已知的、并且近期更新过的Lua脚本。
+# 其余的Lua脚本，请在Github自行搜索查看。
+# Kiddion的Github搜索结果：https://github.com/search?q=Kiddion&type=repositories
+
 
 # Alice Lua：由Alice大佬开发的Kiddion专用Lua脚本，相当于Kiddion增强版DLC，推荐使用。
 # Github地址：https://github.com/CrazyZhang666/GTA5OnlineLua/blob/main/Kiddion/AliceLua.zip
@@ -43,9 +44,18 @@ UltimateMenu/UltimateMenu,Kiddions,null,%ProgramData%\GTA5OnlineTools\Kiddion\sc
 
 
 
+
+
 # ================================ YimMenu Lua ================================
 # YimMenu 脚本目录为 %APPDATA%\YimMenu\scripts
 # YimMenu 已禁用的脚本目录为 %APPDATA%\YimMenu\scripts\disabled
+
+# 以下仅收录，我已知的、并且近期更新过的Lua脚本。
+# 其余的Lua脚本，请在YimMenu的Lua仓库或Github自行搜索查看。
+
+# YimMenu的Lua仓库地址：https://github.com/orgs/YimMenu-Lua/repositories?type=all
+# YimMenu的Github搜索结果：https://github.com/search?q=YimMenu&type=repositories
+
 
 # Extras-Addon-for-YimMenu：这个插件为YimMenu提供了额外的工具，这些工具还不是独立基础版本的一部分。
 # Github地址：https://github.com/Deadlineem/Extras-Addon-for-YimMenu
@@ -91,34 +101,79 @@ YimMenu-Lua/YimResupplier,null,YimResupplier.lua,%APPDATA%\YimMenu\scripts
 # Github地址：https://github.com/YimMenu-Lua/DailyCollectibles
 YimMenu-Lua/DailyCollectibles,null,daily_collectibles.lua,%APPDATA%\YimMenu\scripts
 
+
+# =============================================================================
+# 以下Lua脚本将会被禁用，因为路径结尾添加了“\disabled”
+# =============================================================================
+
 # UltimateMenu：一个菜单脚本，具有出色的解锁/抢劫编辑器和支持 kiddions modest menu 和 YimMenu 的金钱选项。
 # Github地址：https://github.com/UltimateMenu/UltimateMenu/tree/main/YimMenu
 UltimateMenu/UltimateMenu,YimMenu,null,%APPDATA%\YimMenu\scripts\disabled
 
+# Samurais-Scripts：一个 Lua 脚本的基础，以角色扮演和在充满广告机器人和有毒作弊者的游戏中享受乐趣为中心。
+# Github地址：https://github.com/YimMenu-Lua/Samurais-Scripts
+YimMenu-Lua/Samurais-Scripts,data,null,%APPDATA%\YimMenu\scripts\disabled
+YimMenu-Lua/Samurais-Scripts,lib,null,%APPDATA%\YimMenu\scripts\disabled
+YimMenu-Lua/Samurais-Scripts,null,samurais_scripts.lua,%APPDATA%\YimMenu\scripts\disabled
 
-# 其余Lua脚本说明，请查看YimMenu的Lua仓库。且以下收录并不完全。
-# Github地址：https://github.com/orgs/YimMenu-Lua/repositories?type=all
+# Pessi：Pessi 主要是一个恢复脚本，有多种方法，从 1M 的快速循环到各种有限的事务。
+# Github地址：https://github.com/YimMenu-Lua/Pessi
+YimMenu-Lua/Pessi,null,Pessi.lua,%APPDATA%\YimMenu\scripts\disabled
 
+# Harmless-Scripts：Harmless 为 YimMenu 制作的 Lua 脚本的 Repo。
+# Github地址：https://github.com/YimMenu-Lua/Harmless-Scripts
+YimMenu-Lua/Harmless-Scripts,null,HarmlessScript.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# PayphoneHits：用于电话暗杀的 Lua 脚本。
+# Github地址：https://github.com/YimMenu-Lua/PayphoneHits
+YimMenu-Lua/PayphoneHits,null,payphone_hits.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# TokyoDrift：为汽车爱好者增加了一些有趣的功能。
+# Github地址：https://github.com/YimMenu-Lua/TokyoDrift
+YimMenu-Lua/TokyoDrift,null,tokyodrift.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# UnlockEverything：解锁一切。
+# Github地址：https://github.com/YimMenu-Lua/UnlockEverything
+YimMenu-Lua/UnlockEverything,null,WasabiWords.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# RandomEvents：YimMenu 关于随机事件的 Lua 脚本。。
+# Github地址：https://github.com/YimMenu-Lua/RandomEvents
 YimMenu-Lua/RandomEvents,null,random_events.lua,%APPDATA%\YimMenu\scripts\disabled
 
-YimMenu-Lua/EliteTracker,null,elite_tracker.lua,%APPDATA%\YimMenu\scripts\disabled
+# FMTransactionTriggerer：允许您通过 freemode 脚本触发交易。仅供实验使用，使用风险自负。
+# Github地址：https://github.com/YimMenu-Lua/FMTransactionTriggerer
+YimMenu-Lua/FMTransactionTriggerer,null,service_transactions.lua,%APPDATA%\YimMenu\scripts\disabled
 
+# GroundFireworks：添加了地面烟花，其工作原理类似于旧 GTA 在线模式中的地面烟花。
+# Github地址：https://github.com/YimMenu-Lua/GroundFireworks
+YimMenu-Lua/GroundFireworks,null,fireworks.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# Casino-Pacino：允许您通过在所有游戏中作弊来玩赌场游戏，还可以操纵赌场抢劫案。
+# Github地址：https://github.com/YimMenu-Lua/Casino-Pacino
 YimMenu-Lua/Casino-Pacino,null,CasinoPacino.lua,%APPDATA%\YimMenu\scripts\disabled
 YimMenu-Lua/Casino-Pacino,null,CasinoPacinoJson.lua,%APPDATA%\YimMenu\scripts\disabled
 
-YimMenu-Lua/UnlockEverything,null,WasabiWords.lua,%APPDATA%\YimMenu\scripts\disabled
-
-YimMenu-Lua/TokyoDrift,null,tokyodrift.lua,%APPDATA%\YimMenu\scripts\disabled
-
-YimMenu-Lua/Removed-vehicles,null,Removed Vehicles v1.69.lua,%APPDATA%\YimMenu\scripts\disabled
-
-YimMenu-Lua/FMTransactionTriggerer,null,service_transactions.lua,%APPDATA%\YimMenu\scripts\disabled
-
-YimMenu-Lua/GroundFireworks,null,fireworks.lua,%APPDATA%\YimMenu\scripts\disabled
-
+# Singleplayer-Menu：简单的单人作弊。
+# Github地址：https://github.com/YimMenu-Lua/Singleplayer-Menu
 YimMenu-Lua/Singleplayer-Menu,null,SinglePlayer.lua,%APPDATA%\YimMenu\scripts\disabled
 
-YimMenu-Lua/Pessi,null,Pessi.lua,%APPDATA%\YimMenu\scripts\disabled
+# Removed-vehicles：重新激活通过网页购买已删除车辆的选项。
+# Github地址：https://github.com/YimMenu-Lua/Removed-vehicles
+YimMenu-Lua/Removed-vehicles,null,Removed Vehicles v1.69.lua,%APPDATA%\YimMenu\scripts\disabled
 
+# Sightseeing：万圣节观光活动的适当脚本。
+# Github地址：https://github.com/YimMenu-Lua/Sightseeing
 YimMenu-Lua/Sightseeing,null,sightseeing.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# EliteTracker：允许您跟踪您的精英挑战进度。
+# Github地址：https://github.com/YimMenu-Lua/EliteTracker
+YimMenu-Lua/EliteTracker,null,elite_tracker.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# Cutscene-Player：允许您播放过场动画。
+# Github地址：https://github.com/YimMenu-Lua/Cutscene-Player
+YimMenu-Lua/Cutscene-Player,null,cutscene_player.lua,%APPDATA%\YimMenu\scripts\disabled
+
+# Internet：允许您打开各种计算机。
+# Github地址：https://github.com/YimMenu-Lua/Internet
+YimMenu-Lua/Internet,null,InternetComputers.lua,%APPDATA%\YimMenu\scripts\disabled
 # ==================================== End ====================================

@@ -64,6 +64,7 @@ echo -----------------------------------------------------
 echo [INFO] All download tasks completed.
 echo -----------------------------------------------------
 
+pause
 endlocal
 exit /b 0
 
