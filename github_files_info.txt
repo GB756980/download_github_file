@@ -112,8 +112,8 @@ UltimateMenu/UltimateMenu,YimMenu,null,%APPDATA%\YimMenu\scripts\disabled
 
 # Samurais-Scripts：一个 Lua 脚本的基础，以角色扮演和在充满广告机器人和有毒作弊者的游戏中享受乐趣为中心。
 # Github地址：https://github.com/YimMenu-Lua/Samurais-Scripts
-YimMenu-Lua/Samurais-Scripts,data,null,%APPDATA%\YimMenu\scripts\disabled
-YimMenu-Lua/Samurais-Scripts,lib,null,%APPDATA%\YimMenu\scripts\disabled
+YimMenu-Lua/Samurais-Scripts,data,null,%APPDATA%\YimMenu\scripts\disabled\data
+YimMenu-Lua/Samurais-Scripts,lib,null,%APPDATA%\YimMenu\scripts\disabled\lib
 YimMenu-Lua/Samurais-Scripts,null,samurais_scripts.lua,%APPDATA%\YimMenu\scripts\disabled
 
 # Pessi：Pessi 主要是一个恢复脚本，有多种方法，从 1M 的快速循环到各种有限的事务。
