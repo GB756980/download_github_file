@@ -4,7 +4,7 @@
 # 然后从 Github 下载指定的文件，如果文件是 Zip 格式，将会解压并删除压缩包。
 
 # github_files_info.txt 的格式如下：（注意：要使用英文逗号间隔四个参数）
-# 仓库所有者/仓库名,需要下载的文件夹,需要下载的文件,下载到本机的地址
+# 是否下载(true下载，false不下载),仓库所有者/仓库名,需要下载的文件夹,需要下载的文件,下载到本机的地址
 
 # “下载到本机的地址” 可以使用系统环境变量。例如 %ProgramData% 、%APPDATA%
 # 注意：空用 null 来表示。例如：根目录不需要填写文件夹，文件夹为 null。
@@ -19,7 +19,7 @@
 # ================================ Other Files ================================
 # sch-lda/yctest2：此翻译方式为劫持翻译，将Lua传入Yimmenu的显示相关API的参数进行实时替换。
 # Github地址：https://github.com/sch-lda/yctest2/tree/main/Lua
-sch-lda/yctest2,Lua,lua_lang.json,%APPDATA%\YimMenu\translations
+true,sch-lda/yctest2,Lua,lua_lang.json,%APPDATA%\YimMenu\translations
 # ==================================== End ====================================
 
 
@@ -35,11 +35,11 @@ sch-lda/yctest2,Lua,lua_lang.json,%APPDATA%\YimMenu\translations
 
 # Alice Lua：由Alice大佬开发的Kiddion专用Lua脚本，相当于Kiddion增强版DLC，推荐使用。
 # Github地址：https://github.com/CrazyZhang666/GTA5OnlineLua/blob/main/Kiddion/AliceLua.zip
-CrazyZhang666/GTA5OnlineLua,Kiddion,AliceLua.zip,%ProgramData%\GTA5OnlineTools\Kiddion\scripts
+false,CrazyZhang666/GTA5OnlineLua,Kiddion,AliceLua.zip,%ProgramData%\GTA5OnlineTools\Kiddion\scripts
 
 # UltimateMenu：一个菜单脚本，具有出色的解锁/抢劫编辑器和支持 kiddions modest menu 和 YimMenu 的金钱选项。
 # Github地址：https://github.com/UltimateMenu/UltimateMenu/tree/main/Kiddions
-UltimateMenu/UltimateMenu,Kiddions,null,%ProgramData%\GTA5OnlineTools\Kiddion\scripts
+false,UltimateMenu/UltimateMenu,Kiddions,null,%ProgramData%\GTA5OnlineTools\Kiddion\scripts
 # ==================================== End ====================================
 
 
@@ -48,7 +48,6 @@ UltimateMenu/UltimateMenu,Kiddions,null,%ProgramData%\GTA5OnlineTools\Kiddion\sc
 
 # ================================ YimMenu Lua ================================
 # YimMenu 脚本目录为 %APPDATA%\YimMenu\scripts
-# YimMenu 已禁用的脚本目录为 %APPDATA%\YimMenu\scripts\disabled
 
 # 以下仅收录，我已知的、并且近期更新过的Lua脚本。
 # 其余的Lua脚本，请在YimMenu的Lua仓库或Github自行搜索查看。
@@ -60,120 +59,118 @@ UltimateMenu/UltimateMenu,Kiddions,null,%ProgramData%\GTA5OnlineTools\Kiddion\sc
 # Extras-Addon-for-YimMenu：这个插件为YimMenu提供了额外的工具，这些工具还不是独立基础版本的一部分。
 # Github地址：https://github.com/Deadlineem/Extras-Addon-for-YimMenu
 # 官网地址：http://extrasaddon.us.to/
-Deadlineem/Extras-Addon-for-YimMenu,null,Extras-Addon.lua,%APPDATA%\YimMenu\scripts
-Deadlineem/Extras-Addon-for-YimMenu,null,Extras-data.lua,%APPDATA%\YimMenu\scripts
-Deadlineem/Extras-Addon-for-YimMenu,null,json.lua,%APPDATA%\YimMenu\scripts
+true,Deadlineem/Extras-Addon-for-YimMenu,null,Extras-Addon.lua,%APPDATA%\YimMenu\scripts
+true,Deadlineem/Extras-Addon-for-YimMenu,null,Extras-data.lua,%APPDATA%\YimMenu\scripts
+true,Deadlineem/Extras-Addon-for-YimMenu,null,json.lua,%APPDATA%\YimMenu\scripts
 
 # SCH Lua：discord用户yeahsch的自用脚本,第一个开源yim开发者示例lua
 # Github地址：https://github.com/sch-lda/SCH-LUA-YIMMENU
-sch-lda/SCH-LUA-YIMMENU,null,sch.lua,%APPDATA%\YimMenu\scripts
+true,sch-lda/SCH-LUA-YIMMENU,null,sch.lua,%APPDATA%\YimMenu\scripts
 
 # Heist Lua：佩岛/赌场/末日任务脚本
 # Github地址：https://github.com/wangzixuank/YimMenu-HeistLua
-wangzixuank/YimMenu-HeistLua,scripts,Heist.lua,%APPDATA%\YimMenu\scripts
+true,wangzixuank/YimMenu-HeistLua,scripts,Heist.lua,%APPDATA%\YimMenu\scripts
 
 # Alice Lua：一款由Alice大佬开发的YimMenu使用的Lua脚本
 # Github地址：https://github.com/CrazyZhang666/GTA5OnlineLua/blob/main/YimMenu/AliceLua.zip
-CrazyZhang666/GTA5OnlineLua,YimMenu,AliceLua.zip,%APPDATA%\YimMenu\scripts
+true,CrazyZhang666/GTA5OnlineLua,YimMenu,AliceLua.zip,%APPDATA%\YimMenu\scripts
 
 # RScript：载具、NPC实体管理控制，任务助手，和其它若干功能
 # Github地址：https://github.com/TCRoid/YimMenu-Lua-RScript
-TCRoid/YimMenu-Lua-RScript,null,RScript.lua,%APPDATA%\YimMenu\scripts
-TCRoid/YimMenu-Lua-RScript,RScript,null,%APPDATA%\YimMenu\scripts\RScript
+true,TCRoid/YimMenu-Lua-RScript,null,RScript.lua,%APPDATA%\YimMenu\scripts
+true,TCRoid/YimMenu-Lua-RScript,RScript,null,%APPDATA%\YimMenu\scripts\RScript
 
 # RS_Missions：单人启动任务，直接完成任务，无需前置直接启动抢劫终章差事
 # Github地址：https://github.com/TCRoid/YimMenu-Lua-RS-Missions
-TCRoid/YimMenu-Lua-RS-Missions,null,RS_Missions.lua,%APPDATA%\YimMenu\scripts
+true,TCRoid/YimMenu-Lua-RS-Missions,null,RS_Missions.lua,%APPDATA%\YimMenu\scripts
 
 # Gun Van：允许您编辑武装厢型车等。
 # Github地址：https://github.com/YimMenu-Lua/GunVan
-YimMenu-Lua/GunVan,null,gun_van.lua,%APPDATA%\YimMenu\scripts
+true,YimMenu-Lua/GunVan,null,gun_van.lua,%APPDATA%\YimMenu\scripts
 
 # MiniGameHack：小游戏瞬间完成，跳过黑客攻击过程
 # Github地址：https://github.com/YimMenu-Lua/MiniGameHack
-YimMenu-Lua/MiniGameHack,null,minigamehack.lua,%APPDATA%\YimMenu\scripts
+true,YimMenu-Lua/MiniGameHack,null,minigamehack.lua,%APPDATA%\YimMenu\scripts
 
 # YimResupplier：一个 Lua 脚本，可立即为 GTA 在线模式中的 MC 业务提供补给。
 # Github地址：https://github.com/YimMenu-Lua/YimResupplier
-YimMenu-Lua/YimResupplier,null,YimResupplier.lua,%APPDATA%\YimMenu\scripts
+true,YimMenu-Lua/YimResupplier,null,YimResupplier.lua,%APPDATA%\YimMenu\scripts
 
 # DailyCollectibles：一个 Lua 脚本，可让您查看每日收藏品的位置、传送和更多内容。
 # Github地址：https://github.com/YimMenu-Lua/DailyCollectibles
-YimMenu-Lua/DailyCollectibles,null,daily_collectibles.lua,%APPDATA%\YimMenu\scripts
+true,YimMenu-Lua/DailyCollectibles,null,daily_collectibles.lua,%APPDATA%\YimMenu\scripts
 
-
-# =============================================================================
-# 以下Lua脚本将会被禁用，因为路径结尾添加了“\disabled”
-# =============================================================================
+# -----------------------------------------------------------------------------
+# 以下Lua脚本不会下载，因为第一个参数为false。
+# -----------------------------------------------------------------------------
 
 # UltimateMenu：一个菜单脚本，具有出色的解锁/抢劫编辑器和支持 kiddions modest menu 和 YimMenu 的金钱选项。
 # Github地址：https://github.com/UltimateMenu/UltimateMenu/tree/main/YimMenu
-UltimateMenu/UltimateMenu,YimMenu,null,%APPDATA%\YimMenu\scripts\disabled
+false,UltimateMenu/UltimateMenu,YimMenu,null,%APPDATA%\YimMenu\scripts
 
 # Samurais-Scripts：一个 Lua 脚本的基础，以角色扮演和在充满广告机器人和有毒作弊者的游戏中享受乐趣为中心。
 # Github地址：https://github.com/YimMenu-Lua/Samurais-Scripts
-YimMenu-Lua/Samurais-Scripts,data,null,%APPDATA%\YimMenu\scripts\disabled\data
-YimMenu-Lua/Samurais-Scripts,lib,null,%APPDATA%\YimMenu\scripts\disabled\lib
-YimMenu-Lua/Samurais-Scripts,null,samurais_scripts.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Samurais-Scripts,data,null,%APPDATA%\YimMenu\scripts\data
+false,YimMenu-Lua/Samurais-Scripts,lib,null,%APPDATA%\YimMenu\scripts\lib
+false,YimMenu-Lua/Samurais-Scripts,null,samurais_scripts.lua,%APPDATA%\YimMenu\scripts
 
 # Pessi：Pessi 主要是一个恢复脚本，有多种方法，从 1M 的快速循环到各种有限的事务。
 # Github地址：https://github.com/YimMenu-Lua/Pessi
-YimMenu-Lua/Pessi,null,Pessi.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Pessi,null,Pessi.lua,%APPDATA%\YimMenu\scripts
 
 # Harmless-Scripts：Harmless 为 YimMenu 制作的 Lua 脚本的 Repo。
 # Github地址：https://github.com/YimMenu-Lua/Harmless-Scripts
-YimMenu-Lua/Harmless-Scripts,null,HarmlessScript.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Harmless-Scripts,null,HarmlessScript.lua,%APPDATA%\YimMenu\scripts
 
 # PayphoneHits：用于电话暗杀的 Lua 脚本。
 # Github地址：https://github.com/YimMenu-Lua/PayphoneHits
-YimMenu-Lua/PayphoneHits,null,payphone_hits.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/PayphoneHits,null,payphone_hits.lua,%APPDATA%\YimMenu\scripts
 
 # TokyoDrift：为汽车爱好者增加了一些有趣的功能。
 # Github地址：https://github.com/YimMenu-Lua/TokyoDrift
-YimMenu-Lua/TokyoDrift,null,tokyodrift.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/TokyoDrift,null,tokyodrift.lua,%APPDATA%\YimMenu\scripts
 
 # UnlockEverything：解锁一切。
 # Github地址：https://github.com/YimMenu-Lua/UnlockEverything
-YimMenu-Lua/UnlockEverything,null,WasabiWords.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/UnlockEverything,null,WasabiWords.lua,%APPDATA%\YimMenu\scripts
 
 # RandomEvents：YimMenu 关于随机事件的 Lua 脚本。。
 # Github地址：https://github.com/YimMenu-Lua/RandomEvents
-YimMenu-Lua/RandomEvents,null,random_events.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/RandomEvents,null,random_events.lua,%APPDATA%\YimMenu\scripts
 
 # FMTransactionTriggerer：允许您通过 freemode 脚本触发交易。仅供实验使用，使用风险自负。
 # Github地址：https://github.com/YimMenu-Lua/FMTransactionTriggerer
-YimMenu-Lua/FMTransactionTriggerer,null,service_transactions.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/FMTransactionTriggerer,null,service_transactions.lua,%APPDATA%\YimMenu\scripts
 
 # GroundFireworks：添加了地面烟花，其工作原理类似于旧 GTA 在线模式中的地面烟花。
 # Github地址：https://github.com/YimMenu-Lua/GroundFireworks
-YimMenu-Lua/GroundFireworks,null,fireworks.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/GroundFireworks,null,fireworks.lua,%APPDATA%\YimMenu\scripts
 
 # Casino-Pacino：允许您通过在所有游戏中作弊来玩赌场游戏，还可以操纵赌场抢劫案。
 # Github地址：https://github.com/YimMenu-Lua/Casino-Pacino
-YimMenu-Lua/Casino-Pacino,null,CasinoPacino.lua,%APPDATA%\YimMenu\scripts\disabled
-YimMenu-Lua/Casino-Pacino,null,CasinoPacinoJson.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Casino-Pacino,null,CasinoPacino.lua,%APPDATA%\YimMenu\scripts
+false,YimMenu-Lua/Casino-Pacino,null,CasinoPacinoJson.lua,%APPDATA%\YimMenu\scripts
 
 # Singleplayer-Menu：简单的单人作弊。
 # Github地址：https://github.com/YimMenu-Lua/Singleplayer-Menu
-YimMenu-Lua/Singleplayer-Menu,null,SinglePlayer.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Singleplayer-Menu,null,SinglePlayer.lua,%APPDATA%\YimMenu\scripts
 
 # Removed-vehicles：重新激活通过网页购买已删除车辆的选项。
 # Github地址：https://github.com/YimMenu-Lua/Removed-vehicles
-YimMenu-Lua/Removed-vehicles,null,Removed Vehicles v1.69.lua,%APPDATA%\YimMenu\scripts\disabled
-
+false,YimMenu-Lua/Removed-vehicles,null,Removed Vehicles v1.69.lua,%APPDATA%\YimMenu\scripts
 # Sightseeing：万圣节观光活动的适当脚本。
 # Github地址：https://github.com/YimMenu-Lua/Sightseeing
-YimMenu-Lua/Sightseeing,null,sightseeing.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Sightseeing,null,sightseeing.lua,%APPDATA%\YimMenu\scripts
 
 # EliteTracker：允许您跟踪您的精英挑战进度。
 # Github地址：https://github.com/YimMenu-Lua/EliteTracker
-YimMenu-Lua/EliteTracker,null,elite_tracker.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/EliteTracker,null,elite_tracker.lua,%APPDATA%\YimMenu\scripts
 
 # Cutscene-Player：允许您播放过场动画。
 # Github地址：https://github.com/YimMenu-Lua/Cutscene-Player
-YimMenu-Lua/Cutscene-Player,null,cutscene_player.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Cutscene-Player,null,cutscene_player.lua,%APPDATA%\YimMenu\scripts
 
 # Internet：允许您打开各种计算机。
 # Github地址：https://github.com/YimMenu-Lua/Internet
-YimMenu-Lua/Internet,null,InternetComputers.lua,%APPDATA%\YimMenu\scripts\disabled
+false,YimMenu-Lua/Internet,null,InternetComputers.lua,%APPDATA%\YimMenu\scripts
 # ==================================== End ====================================
