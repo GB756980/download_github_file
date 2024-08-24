@@ -1,5 +1,11 @@
-# 下载Github的最新文件
+# download_github_file：下载Github的最新文件
 
+
+## 注意
+本项目以后将不再更新，因为功能已合并至：
+- [download_form_github（从 Github 更新 Release 或下载文件）](https://github.com/GB756980/download_form_github)
+
+##项目说明
 
 初心是为了下载GTA5 YimMenu的Lua脚本，修改github_files_info.txt也可以下载其他文件使用。
 
